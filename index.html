@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Project | Nicky Cols</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Tailwind config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#000000',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-black dark:bg-black dark:text-white font-sans transition-colors">
+  <!-- Header -->
+<header class="bg-white dark:bg-black shadow-md p-4 flex items-center justify-between">
+  <div class="Boldonse">
+    <h1 class="text-4xl font-black">AN INVITATION</h1>
+    <h1 class="text-4xl font-black mt-1">TO THE HIDDEN</h1>
+  </div>
+    <label class="flex items-center cursor-pointer">
+    <div class="relative">
+        <input type="checkbox" id="darkModeToggle" class="sr-only peer" />
+        <div class="w-10 h-6 bg-gray-300 rounded-full peer-checked:bg-yellow-400 transition"></div>
+        <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-4"></div>
+    </div>
+    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-white">Dark Mode</span>
+    </label>
+</header>
+
+  <!-- Cover Image -->
+  <div class="w-full flex justify-center items-center my-6">
+    <img 
+      src="https://images.unsplash.com/photo-1589114300127-cdd6fdb295cb?q=80&w=1074&auto=format&fit=crop"
+      alt="Cover Image" 
+      class="w-full max-h-[500px] object-cover shadow-md"
+    />
+  </div>
+
+    <div class="flex w-full my-8">
+    <div class="w-[20%] bg-white dark:bg-black p-4 text-left">
+        <h4 class="text-base">CURATED SELECTION OF</h4>
+        <h3 class="text-xl font-bold">FINE SPIRITS</h3>
+    </div>
+    <div class="w-[20%] bg-white dark:bg-black p-4 text-left">
+        <h4>A HIDDEN GEM</h4>
+        <h3 class="text-xl font-bold">7 NIGHTS / WEEK</h3>
+    </div>
+    <div class="w-[40%] bg-white dark:bg-black p-4 text-left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nisi quidem in voluptatibus labore repellendus quod expedita incidunt magni, hic quo ab ipsam dolorum impedit, neque rerum dolor nesciunt nulla.
+    </div>
+    <div class="w-[20%] bg-white dark:bg-black p-4 text-left">
+    </div>
+    </div>
+
+
+  <!-- Main Content -->
+  <main class="w-full px-4">
+    <section class="Source-Sans-3">
+      <h1 class="text-center text-4xl font-black mb-1">BEHIND</h1>
+      <h2 class="text-center font-black  mt-0 mb-2">Closed Doors</h2>
+      <p class="w-1/2 mx-auto text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam delectus eaque, odio facere quia nihil blanditiis reiciendis alias porro quae unde dolorum voluptatum pariatur, fugit et aliquam? Commodi, blanditiis dolor!  </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <img src="https://images.unsplash.com/photo-1589114300127-cdd6fdb295cb?q=80&w=1074&auto=format&fit=crop" class="shadow cursor-pointer hover:scale-105 transition" />
+        <img src="https://images.unsplash.com/photo-1589114300127-cdd6fdb295cb?q=80&w=1074&auto=format&fit=crop" class="shadow cursor-pointer hover:scale-105 transition" />
+        <img src="https://images.unsplash.com/photo-1589114300127-cdd6fdb295cb?q=80&w=1074&auto=format&fit=crop" class="shadow cursor-pointer hover:scale-105 transition" />
+         <img src="https://images.unsplash.com/photo-1589114300127-cdd6fdb295cb?q=80&w=1074&auto=format&fit=crop" class="shadow cursor-pointer hover:scale-105 transition" />
+        <img src="https://images.unsplash.com/photo-1589114300127-cdd6fdb295cb?q=80&w=1074&auto=format&fit=crop" class="shadow cursor-pointer hover:scale-105 transition" />
+        <img src="https://images.unsplash.com/photo-1589114300127-cdd6fdb295cb?q=80&w=1074&auto=format&fit=crop" class="shadow cursor-pointer hover:scale-105 transition" />
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-center mt-8"><button class="mb-4 bg-black text-white px-3 py-1">GUESTLIST</button></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+    <img id="modalImg" src="" alt="Modal" class="max-w-full max-h-full rounded shadow-lg" />
+    <button id="closeModal" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+  </div>
+
+  <!-- Scroll-to-top Button -->
+  <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-black text-white px-4 py-2 rounded shadow-lg hidden hover:bg-gray-800 transition">↑ Top</button>
+
+  <!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>

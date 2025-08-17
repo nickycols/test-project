@@ -1,0 +1,21 @@
+/* Import Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS (optional) */
+@media (min-width: 300px) {
+  /* Custom styles if needed */
+}
+.boldonse-regular {
+  font-family: "Boldonse", system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.source-sans-3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; 
+  font-style: normal;
+}
